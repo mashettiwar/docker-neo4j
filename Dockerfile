@@ -40,4 +40,4 @@ VOLUME /opt/data
 
 # Set the bootstrap script on container run
 ENV BOOTSTRAP /etc/bootstrap.sh
-CMD ["/etc/bootstrap.sh", "-d"]
+CMD ["/etc/bootstrap.sh", "-d", "-v", "/var/lib/neo4j", "--name", "graphdb"]
